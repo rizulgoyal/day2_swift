@@ -10,3 +10,10 @@ import Foundation
 
 print("Hello, World!")
 
+var stringSort = "aabbbccdeefffd"
+
+for sort in stringSort
+{
+    
+}
+
