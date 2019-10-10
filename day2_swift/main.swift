@@ -85,8 +85,7 @@ for itemvalue in dic.keys
 {
     print(itemvalue)
 }
-var integer  = [0,3,4,1,2,5]
-print(dic.keys.sorted())
+
 
 func demo(a: Int,b:Int) -> Int {
     return a+b
@@ -97,10 +96,19 @@ func demo2(x: String...) {
 
     for s in x
     {
-        print(s)
+        print(s, separator: " ", terminator: " ")
     }
 
 }
+
+func demo4(of a: Int ,and b:Int) -> Int {
+    let c:Int
+    c=a+b
+    return c
+}
+print("The addition value is \(demo4(of: 20, and: 25))")
+
+
 
 demo2(x: "Hello", "World","IOS")
 
@@ -116,3 +124,29 @@ func demo3(x: Int...) {
 }
 
 demo3(x: 20,21,31,25)
+
+
+func demo5(firstString s1:String,secondString s2:String) -> String {
+    return s1 + " " + s2
+}
+
+print(demo5(firstString: "Hello", secondString: "Rizul"))
+
+
+
+var intList  = [0,3,4,1,2,5]
+var charList  = ["b","g","d","c","r","t"]
+var dicn : [Int:String]
+dicn.updateValue(charList[0], forKey: intList[0])
+dicn.updateValue(charList[1], forKey: intList[1])
+dicn.updateValue(charList[2], forKey: intList[2])
+dicn.updateValue(charList[3], forKey: intList[3])
+dicn.updateValue(charList[4], forKey: intList[4])
+dicn.updateValue(charList[5], forKey: intList[5])
+
+for s1 in intList.endIndex
+{
+    
+    
+}
+print(dic.keys.sorted())
